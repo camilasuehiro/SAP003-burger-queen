@@ -1,21 +1,22 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React, { useState, useEffect } from 'react';
+import firebase from './utils/firebase';
+import Menu from './pages/menu';
+import Register from './pages/inputUser';
 import './App.css';
 
-class App extends Component {
-  render() {
+  export default function App() {
+    document.title = `Burger Queen`
+  
+  
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+    <div className='App'>
+         <div className='menu'>
+        <Menu />
       </div>
-    );
-  }
-}
+      <div className='resumo'>
+        <Register />
+      </div>
+    </div>
 
-export default App;
+  );
+}
