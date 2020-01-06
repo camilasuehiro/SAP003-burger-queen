@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import firebase from '../utils/firebase';
+import firebase from '../firebase';
 
 function Menu() {
   const [itens1, setItens1] = useState([]);

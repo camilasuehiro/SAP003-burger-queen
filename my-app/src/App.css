@@ -33,14 +33,14 @@
   height: 100px;
   width: 200px;
   border: none;
-  background: #F4A460;
+  background: rgb(228, 165, 111);
   padding: 10px;
   margin: 30px;
   font: bolder 26px Arial;
 }
 
 .itens {
-  color: #999;
+  color: black;
   font: bolder 16px Arial;
   /* font-size: 16px; */
   text-align: left;

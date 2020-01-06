@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import firebase from './utils/firebase';
+import firebase from './firebase';
 import Menu from './pages/menu';
 import Register from './pages/inputUser';
 import './App.css';
