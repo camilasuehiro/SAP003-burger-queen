@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import firebase from '../utils/firebase';
+import firebase from '../firebase';
 
 const Register = () => {
   const [client, setClient] = useState('')
@@ -37,4 +37,3 @@ const Register = () => {
   )
 }
 export default Register;
- 84 
