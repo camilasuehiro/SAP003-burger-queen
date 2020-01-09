@@ -46,30 +46,72 @@ function Menu() {
 
         {menu ? 
 
-        <div>{itens1.map((xis) => 
-          <div key={xis.id}>     
-            <div className='itens'>{xis.name}
-              <div className='price-itens'>{xis.price} reais</div> 
-            </div>  
-            <button className='add-btn'>Adicionar</button>
-          </div>)} 
+        <div>{itens1.map((item) => 
+          <div key={item.id}>     
+            <button className='add-btn'>
+            <div className='itens'>{item.name}
+            <div className='price-itens'>{item.price} reais</div> 
+            </div> 
+            Adicionar
+            </button>  
+          </div>)};
         </div> 
 
         : 
 
-        <div>{itens2.map((xis) => 
-          <div key={xis.id}>     
-            <div className='itens'>{xis.name}
-              <div className='price-itens'>{xis.price} reais</div> 
-            </div>  
-            <button className='add-btn'>Adicionar</button>  
-          </div>)} 
-        </div> 
+        <div>
 
+        <div><h2>Hambúrgueres</h2>
+          {itens2.map((item) => 
+            item.type === 'burger' ?
+            <div key={item.id}>      
+            <button className='add-btn'>
+              <div className='itens'>{item.name}
+              <div className='price-itens'>{item.price} reais</div> 
+              </div> 
+              Adicionar
+            </button>
+            </div>
+
+            : false
+          )}
+        </div>
+
+        <div><h2>Bebidas</h2>
+          {itens2.map((item) => 
+            item.type === 'drink' ?
+            <div key={item.id}>      
+            <button className='add-btn'>
+              <div className='itens'>{item.name}
+              <div className='price-itens'>{item.price} reais</div> 
+              </div> 
+              Adicionar
+            </button>
+            </div>
+
+            : false
+          )}
+          </div>
+
+        <div><h2>Acompanhamentos</h2>
+          {itens2.map((item) => 
+            item.type === 'acomp' ?
+            <div key={item.id}>      
+            <button className='add-btn'>
+              <div className='itens'>{item.name}
+              <div className='price-itens'>{item.price} reais</div> 
+              </div> 
+              Adicionar
+            </button>
+            </div>
+
+            : false
+          )}
+          </div>
+
+        </div>
         }
-
     </div>
-  )
-}
-
+  )}
+       
 export default Menu;

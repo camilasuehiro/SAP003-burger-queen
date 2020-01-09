@@ -3,14 +3,14 @@ import 'firebase/firestore';
 import 'firebase/database';
 
 const config = {
-    apiKey: "AIzaSyBnnfZxA3HAWBfVG3nI47R1MpeOOgu161I",
-    authDomain: "sap003-burger-queen-35534.firebaseapp.com",
-    databaseURL: "https://sap003-burger-queen-35534.firebaseio.com",
-    projectId: "sap003-burger-queen-35534",
-    storageBucket: "sap003-burger-queen-35534.appspot.com",
-    messagingSenderId: "198971468115",
-    appId: "1:198971468115:web:f2b3031dc48d7ab94359a6",
-    measurementId: "G-VBR21ZYXHT"
+    apiKey: "AIzaSyAoafAXpOVMxspSrfWuuG6O1eEliVzMwFU",
+    authDomain: "sap003-burger-queen-a3a18.firebaseapp.com",
+    databaseURL: "https://sap003-burger-queen-a3a18.firebaseio.com",
+    projectId: "sap003-burger-queen-a3a18",
+    storageBucket: "sap003-burger-queen-a3a18.appspot.com",
+    messagingSenderId: "926074853010",
+    appId: "1:926074853010:web:fef1b1ab1263df1fdf384b",
+    measurementId: "G-T7CMXEP47F"
 };
 
 firebase.initializeApp(config);

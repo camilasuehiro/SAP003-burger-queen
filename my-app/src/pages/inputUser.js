@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import firebase from '../firebase';
+import Button from '../components/button';
 
 const Register = () => {
   const [client, setClient] = useState('')
@@ -23,7 +24,7 @@ const Register = () => {
 
   return (
     <form>
-      <p>Preencha os campos abaixo para concluir o pedido</p>
+      <p>Preencha os campos abaixo para concluir o pedido:</p>
       <div>
         <label>Nome: </label>
         <input type='text' value={client} onChange={e => setClient(e.currentTarget.value)} />
@@ -31,8 +32,8 @@ const Register = () => {
       <div>
         <label>Mesa: </label>
         <input type='number' value={table} onChange={e => setTable(e.currentTarget.value)} />
+        <Button class="add-btn" handleClick={onSubmit} title="Enviar Pedido"/>
       </div>
-      <button className='add-btn' onClick={onSubmit}>Enviar Pedido</button>
     </form>
   )
 }
